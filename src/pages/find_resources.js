@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css"
+import "./App.css";
 
 function find_resources() {
   return <div>find_resources</div>;

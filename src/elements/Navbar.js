@@ -6,10 +6,10 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaRecycle } from "react-icons/fa";
 import "./Footer.css";
-import App from "../App";
-import contact_us from "../contact_us";
-import donate_resources from "../donate_resources";
-import find_resources from "../find_resources";
+import App from "../pages/App";
+import contact_us from "../pages/contact_us";
+import donate_resources from "../pages/donate_resources";
+import find_resources from "../pages/find_resources";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 
 const Navbars = () => {

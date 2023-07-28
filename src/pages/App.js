@@ -1,7 +1,7 @@
 import "./App.css";
-import Navbar from "./elements/Navbar";
-import Carousels from "./elements/Carousels";
-import Footer from "./elements/Footer";
+import Navbar from "../elements/Navbar";
+import Carousels from "../elements/Carousels";
+import Footer from "../elements/Footer";
 
 function App() {
   return (

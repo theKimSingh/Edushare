@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css"
+import "./App.css";
 
 function donate_resources() {
   return <div>donate_resources</div>;
