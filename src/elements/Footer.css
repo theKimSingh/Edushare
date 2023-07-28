@@ -1,0 +1,30 @@
+.footer {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.blank-sq {
+    height: 2vh;
+}
+
+.icons {
+    margin-left: 3%;
+}
+
+.green {
+    color: green;
+}
+
+
+.icon-green {
+    margin-right: 1%;
+    color: green;
+}
+
+.footer-text {
+    padding-top: 2vh;
+    color: green;
+    text-align: left;
+    padding-left: 40%;
+    
+}
