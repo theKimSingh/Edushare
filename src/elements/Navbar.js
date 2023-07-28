@@ -7,6 +7,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FaRecycle } from "react-icons/fa";
 import "./Footer.css";
 import App from "../App";
+import contact_us from "../contact_us";
+import donate_resources from "../donate_resources";
+import find_resources from "../find_resources";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 
 const Navbars = () => {
@@ -44,7 +47,9 @@ const Routing = () => {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" component={<App />} />
-        <Route path="/contact" />
+        <Route path="/contact" component={<contact_us />} />
+        <Route path="/donate-resources" component={<donate_resources />} />
+        <Route path="/find-resources" component={<find-resources />} />
       </Routes>
     </BrowserRouter>
   );
