@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
 
-function contact_us() {
+function Contact() {
   return <div>contact_us</div>;
 }
 
-export default contact_us;
+export default Contact;

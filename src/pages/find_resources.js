@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
 
-function find_resources() {
+function Find() {
   return <div>find_resources</div>;
 }
 
-export default find_resources;
+export default Find;
