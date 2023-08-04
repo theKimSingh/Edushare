@@ -30,9 +30,9 @@ function App() {
             high-schoolers, for children around the globe. Born from a humble
             position of a Quadrant Resource internship, our team put mind and
             soul together to figure out a way to give back to the community for
-            all it has given us. Our solution? A platform to children around the
-            globe share educational resources. Join our platform now to
-            contribute to our mission and help those less fortunate than you.
+            all it has given us. Our solution? A platform to help children
+            around the globe share educational resources. Join our platform now
+            to contribute to our mission and help those less fortunate than you.
           </p>
         </div>
       </div>
