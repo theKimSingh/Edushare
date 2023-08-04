@@ -96,3 +96,11 @@
     left: 5%;
     width: 20vw;
 }
+
+.image-text h3 {
+    font-size: 1.8rem;
+}
+
+.image-text p {
+    font-size: 1.2rem;
+}

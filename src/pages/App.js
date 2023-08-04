@@ -1,11 +1,8 @@
 import "./App.css";
-import Navbar from "../elements/Navbar";
-import Footer from "../elements/Footer";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <div>
         <img
           src="../poor-children.jpg"
@@ -39,7 +36,6 @@ function App() {
           </p>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

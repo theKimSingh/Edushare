@@ -7,6 +7,7 @@ import { Container } from "reactstrap";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./footer.css";
+import { Link } from "react-router-dom";
 
 const Navbars = () => {
   return (
@@ -18,9 +19,27 @@ const Navbars = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/home">Home</Nav.Link>
-              <Nav.Link href="/find-resources">Find Resources</Nav.Link>
-              <Nav.Link href="/donate-resources">Donate Resources</Nav.Link>
+              <Nav.Link>
+                <Link style={{ textDecoration: "none", color: "black" }} to="/">
+                  Home
+                </Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link
+                  style={{ textDecoration: "none", color: "black" }}
+                  to="/find-resources"
+                >
+                  Find Resources
+                </Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link
+                  style={{ textDecoration: "none", color: "black" }}
+                  to="/donate-resources"
+                >
+                  Donate Resources
+                </Link>
+              </Nav.Link>
               {/*               <Nav.Link to="contact">Contact Us</Nav.Link>
                */}
             </Nav>
