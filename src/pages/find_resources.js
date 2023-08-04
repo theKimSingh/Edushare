@@ -1,8 +1,9 @@
-import React from "react";
-import "./App.css";
+import React from 'react'
 
-function find_resources() {
-  return <div>find_resources</div>;
+const find_resources = () => {
+  return (
+    <div>find_resources</div>
+  )
 }
 
-export default find_resources;
+export default find_resources

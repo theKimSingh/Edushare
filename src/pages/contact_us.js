@@ -1,8 +1,9 @@
-import React from "react";
-import "./App.css";
+import React from 'react'
 
-function contact_us() {
-  return <div>contact_us</div>;
+const contact_us = () => {
+  return (
+    <div>contact_us</div>
+  )
 }
 
-export default contact_us;
+export default contact_us

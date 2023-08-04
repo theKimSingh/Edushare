@@ -1,8 +1,9 @@
-import React from "react";
-import "./App.css";
+import React from 'react'
 
-function donate_resources() {
-  return <div>donate_resources</div>;
+const donate_resources = () => {
+  return (
+    <div>donate_resources</div>
+  )
 }
 
-export default donate_resources;
+export default donate_resources
