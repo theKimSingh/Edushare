@@ -22,20 +22,21 @@ const Navbars = () => {
                   Home
                 </Link>
               </Nav.Link>
-              <Nav.Link>
-                <Link
-                  style={{ textDecoration: "none", color: "black" }}
-                  to="/find-resources"
-                >
-                  Find Resources
-                </Link>
-              </Nav.Link>
+
               <Nav.Link>
                 <Link
                   style={{ textDecoration: "none", color: "black" }}
                   to="/donate-resources"
                 >
                   Donate Resources
+                </Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link
+                  style={{ textDecoration: "none", color: "black" }}
+                  to="/find-resources"
+                >
+                  Find Resources
                 </Link>
               </Nav.Link>
               {/*               <Nav.Link to="contact">Contact Us</Nav.Link>

@@ -36,3 +36,71 @@
     transform: rotate(360deg);
   }
 }
+
+.floating-donate {
+  background-color: white;
+  width: 60vw;
+  height: 75vh;
+  top: 20%;
+  left: 20%;
+  position: absolute;
+  border-radius: 2rem;
+}
+
+.floating-find {
+  background-color: white;
+  width: 60vw;
+  height: 75vh;
+  top: 20%;
+  left: 20%;
+  position: absolute;
+  border-radius: 2rem;
+}
+
+.donate-form h3 {
+  padding-top: 2vh;
+  color: black;
+  padding-right: 2vw;
+  float: right;
+}
+
+.find-form h3 {
+  padding-top: 2vh;
+  color: black;
+  padding-right: 2vw;
+  float: right;
+}
+
+.donate-form h4 {
+  padding-top: 2vh;
+  padding-left: 2vw;
+  color: green;
+  float: left;
+}
+
+.find-form h4 {
+  padding-top: 2vh;
+  padding-left: 2vw;
+  color: green;
+  float: left;
+}
+
+.find-forms {
+  padding-top: 6vh;
+  align-items: left;
+  float: left;
+  width: 5vw;
+  
+}
+
+#submit{
+  background-color: green;
+  color: white;
+  height: 5vh;
+  width: 8vw;
+  border-radius: 1rem;
+  border-style: none;
+  float: left;
+  margin-left: 4vw;
+  margin-top: 4vh;
+}
