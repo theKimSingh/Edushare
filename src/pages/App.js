@@ -22,7 +22,7 @@ function App() {
       </div>
 
       <div className="second-part">
-        <img src="child-hw.jpg"></img>
+        <img alt="child doing hw" src="child-hw.jpg"></img>
         <div>
           <h3>Who Are We?</h3>
           <p>
