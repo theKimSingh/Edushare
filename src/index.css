@@ -19,6 +19,7 @@
 }
 
 body {
+* {
   margin: 0;
   font-family: var(--base-font);
   box-sizing: border-box;
@@ -82,4 +83,13 @@ textarea:focus, input:focus{
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+center-links a.active {
+  color: gray;
+}
+
+center-links {
+  align-content: center;
 }

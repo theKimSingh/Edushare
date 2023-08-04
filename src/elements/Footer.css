@@ -1,6 +1,10 @@
+:root {
+
+}
+
 .footer {
-    background-color: antiquewhite;
     text-align: center;
+    color: white;
 }
 
 .blank-sq {
@@ -12,7 +16,7 @@
 }
 
 .green {
-    color: green;
+    color: white;
 }
 
 
@@ -27,4 +31,76 @@
     text-align: left;
     padding-left: 40%;
     
+}
+
+.nav {
+    color: white;
+}
+
+.logo-img{
+    width: 3vw;
+}
+
+.home-button {
+    background-color: green;
+    color: white;
+    height: 6vh;
+    width: 10vw;
+    border-radius: 1vh;
+    text-align: center;
+    align-items: center;
+    border: none;
+}
+
+.home-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.second-part {
+    text-align: left;
+    padding-left: 13vw;
+    width: 100%;
+    padding-top: 20vh;
+    padding-bottom: 30vh;
+}
+
+.second-part img {
+    width: 25vw;
+    margin-right: 20vw;
+    float: right;
+    border-radius: 5vw;
+}
+
+.second-part div {
+    width: 40%;
+    padding-top: 5%;
+
+}
+
+.second-part div h3 {
+    font-size: 1.8rem;
+}
+
+.second-part div p {
+    font-size: 1.2rem;
+}
+
+.image-text {
+    text-align: left;
+    margin-left: 15vw;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 20vw;
+}
+
+.image-text h3 {
+    font-size: 1.8rem;
+}
+
+.image-text p {
+    font-size: 1.2rem;
 }
