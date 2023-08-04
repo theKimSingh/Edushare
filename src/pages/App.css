@@ -104,3 +104,12 @@
   margin-left: 4vw;
   margin-top: 4vh;
 }
+
+.left-side {
+  float: left;
+}
+
+.right-side {
+  float: right;
+  margin-left: 5vh;
+}
