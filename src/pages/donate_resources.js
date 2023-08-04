@@ -6,7 +6,11 @@ function Donate() {
       <img
         src="../books.jpg"
         alt="books"
-        style={{ width: "100%", filter: "brightness(120%)" }}
+        style={{
+          width: "100%",
+          filter: "brightness(120%)",
+          
+        }}
       />
       <div className="floating-donate">
         <form className="donate-form">

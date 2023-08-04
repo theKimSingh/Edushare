@@ -6,7 +6,7 @@ function Find() {
       <img
         src="../book-shelf.jpg"
         alt="books"
-        style={{ width: "100%", filter: "brightness(60%)" }}
+        style={{ width: "100%", filter: "brightness(60%)", height: "80vh" }}
       />
       <div className="floating-find">
         <form className="find-form">

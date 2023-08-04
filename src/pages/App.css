@@ -74,14 +74,14 @@
 .donate-form h4 {
   padding-top: 2vh;
   padding-left: 2vw;
-  color: green;
+  color: var(--base);
   float: left;
 }
 
 .find-form h4 {
   padding-top: 2vh;
   padding-left: 2vw;
-  color: green;
+  color: var(--base);
   float: left;
 }
 
@@ -91,7 +91,7 @@
 }
 
 #submit{
-  background-color: green;
+  background-color: var(--base);
   color: white;
   height: 5vh;
   width: 8vw;
