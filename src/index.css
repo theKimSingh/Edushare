@@ -2,7 +2,7 @@
 
 :root{
   --base: #244E3A;
-  --base-hover: #005f3f81;
+  --base-hover: #12261c;
   --white: #FFFFFF;
   --base-dark: #000000;
   --white-hover: #ffffff77;
@@ -25,6 +25,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
 
 a{
   color: var(--white);
@@ -49,31 +51,19 @@ a{
   color: var(--base);
 }
 
-/* .background-hero{
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  background: url("./hero-bg.jpg");
-  background-color: rgba(0, 0, 0, 0.5);
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: multiply;
+button{
+  font-size: 16px;
+  background: #244E3A;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold
 }
 
-.background-hero-text{
-  color: var(--white);
-  padding: 10vw 0 15vw var(--default-spacing);
+button:hover {
+  transform: scale(1.1)
 }
-
-.background-hero-heading{
-  font-family: var(--accent-font);
-  font-weight: 700;
-  font-size: clamp(2.3rem, 4vw, 6rem);
-}
-
-.background-hero-description{
-  font-size: clamp(1rem, 1.1vw, 2rem);
-} */
 
 textarea:focus, input:focus{
   outline: none;
