@@ -2,18 +2,18 @@ nav{
     display: flex;
     justify-content: space-between; 
     padding: 2vw var(--default-spacing);
-    height: 10vh;
+    /* height: 10vh; */
 }
 
 .logo-container-link{
     display: flex;
     align-items: center;
-    gap: 20px;
+    /* gap: 20px; */
 }
 
 .logo-img{
     width: 50px;
-    height: 50px;
+    min-width: 50px;
 }
 
 .logo-header{
@@ -100,10 +100,10 @@ nav{
 }
 
 @media only screen and (max-width: 575px){
-    .logo-img{
-        width: 50px; 
+    /* .logo-img{
+        min-width: 50px; 
         height: 50px;
-    }
+    } */
 
     /* .logo-header{
         font-size: 16px;

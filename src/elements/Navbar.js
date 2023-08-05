@@ -1,6 +1,5 @@
 import React from "react";
 import "./Navbar.css";
-// import {Link} from 'react-router-dom'
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRef } from "react";
 import "./Footer.css";
@@ -18,31 +17,14 @@ const Navbar = (props) => {
       <div className="logo-container">
         <a href="/" className="logo-container-link">
           <img src={"./logo.png"} alt="" className="logo-img" />
-          <h2 className="logo-header">Edushare</h2>
+          <h2 className="logo-header">EduShare</h2>
         </a>
       </div>
       <ul className="nav-link-container" ref={navRef}>
-        <li className="nav-item">
-          <Link style={{ textDecoration: "none", color: "black" }} to="/">
-            Home
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link
-            style={{ textDecoration: "none", color: "black" }}
-            to="/donate-resources"
-          >
-            Donate Resources
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link
-            style={{ textDecoration: "none", color: "black" }}
-            to="/find-resources"
-          >
-            Find Resources
-          </Link>
-        </li>
+        <li className="nav-item"><a href="">Home</a></li>
+        <li className="nav-item"><a href="">Donate Resources</a></li>
+        <li className="nav-item"><a href="">Find Resources</a></li>
+        {/* <li className="nav-item"><a href="">Contact</a></li> */}
         <button onClick={showNavbar} className="hamburger nav-close-button">
           <FaTimes />
         </button>
