@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 function Find() {
   return (
@@ -6,7 +6,7 @@ function Find() {
       <img
         src="../book-shelf.jpg"
         alt="books"
-        style={{ width: "100%", filter: "brightness(60%)" }}
+        style={{ width: "100%", filter: "brightness(60%)", height: "80vh" }}
       />
       <div className="floating-find">
         <form className="find-form">
@@ -19,7 +19,7 @@ function Find() {
                 type="text"
                 id="name"
                 name="name"
-                placeholder="John Stuart"
+                placeholder="  John Stuart"
               />
 
               <label for="email">Email</label>
@@ -27,7 +27,7 @@ function Find() {
                 type="text"
                 id="email"
                 name="email"
-                placeholder="you@example.com"
+                placeholder="  you@example.com"
               />
 
               <label for="address">Address</label>
@@ -35,11 +35,16 @@ function Find() {
                 type="text"
                 id="address"
                 name="address"
-                placeholder="123 Airo Street"
+                placeholder="  123 Airo Street"
               />
 
               <label for="city">City</label>
-              <input type="text" id="city" name="city" placeholder="Bothell" />
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="  Bothell"
+              />
             </div>
             <div className="right-side">
               <label for="state">State</label>
@@ -47,15 +52,17 @@ function Find() {
                 type="text"
                 id="state"
                 name="state"
-                placeholder="Arkansas"
+                placeholder="  Arkansas"
               />
 
-              <label for="zip-code">Zip Code</label>
+              <label id="zip-name" for="zip-code">
+                Zip Code
+              </label>
               <input
                 type="text"
                 id="zip-code"
                 name="zip-code"
-                placeholder="12345"
+                placeholder="  12345"
               />
 
               <label for="resource">Resource</label>

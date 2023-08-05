@@ -50,7 +50,7 @@
 .floating-find {
   background-color: white;
   width: 60vw;
-  height: 75vh;
+  height: 55vh;
   top: 20%;
   left: 20%;
   position: absolute;
@@ -74,42 +74,59 @@
 .donate-form h4 {
   padding-top: 2vh;
   padding-left: 2vw;
-  color: green;
+  color: var(--base);
   float: left;
 }
 
 .find-form h4 {
   padding-top: 2vh;
   padding-left: 2vw;
-  color: green;
+  color: var(--base);
   float: left;
 }
 
 .find-forms {
-  padding-top: 6vh;
-  align-items: left;
-  float: left;
-  width: 5vw;
+  padding-top: 10vh;
   
 }
 
 #submit{
-  background-color: green;
+  background-color: var(--base);
   color: white;
   height: 5vh;
   width: 8vw;
   border-radius: 1rem;
   border-style: none;
-  float: left;
-  margin-left: 4vw;
-  margin-top: 4vh;
+  margin-top: 32.5vh;
 }
+
+.find-forms div input {
+  width: 15vw;
+  border-radius: 0.5rem;
+  height: 4vh;
+  border-style: black;
+  border-width: 0.05rem;
+  margin-bottom: 3vh;
+}
+
+#resource {
+  width: 15vw;
+  border-radius: 0.5rem;
+  height: 4vh;
+  border-style: black;
+  border-width: 0.05rem;
+  margin-bottom: 3vh;
+}
+
 
 .left-side {
   float: left;
+  margin-left: 15%;
+  width: 5vw;
 }
 
 .right-side {
-  float: right;
-  margin-left: 5vh;
+  margin-left: 40%;
+  float: left;
+  width: 5vw;
 }
