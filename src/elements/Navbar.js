@@ -59,7 +59,7 @@ const Navbar = (props) => {
 };
 
 export default Navbar;
-{
+
   /* <div>
       <Navbar expand="lg" className="footer">
         <Container className="footer">
@@ -90,8 +90,8 @@ export default Navbar;
                   Find Resources
                 </Link>
 </Nav.Link>*/
-}
-{
+
+
   /*               <Nav.Link to="contact">Contact Us</Nav.Link>
                
             </Nav>
@@ -104,4 +104,4 @@ export default Navbar;
 
 export default Navbars;
  */
-}
+
