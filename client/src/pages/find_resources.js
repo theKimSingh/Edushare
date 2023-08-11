@@ -9,6 +9,16 @@ const Find = () => {
   const [condition, setCondition] = useState("");
   const [resource, setResource] = useState("");
 
+  let imageUrl = "";
+  if (resource === "Textbook") {
+    imageUrl = "https://i.ebayimg.com/images/g/4zcAAOSwThli3Hw5/s-l500.jpg";
+  } else if (resource === "Writing Tools (ex. pens, pencils)") {
+    imageUrl =
+      "https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/79250/writing-tools-clipart-md.png";
+  } else if (resource === "Instruments (ex. rules)") {
+    imageUrl = "https://i.ebayimg.com/images/g/PSsAAOSwNSdcbtNB/s-l640.jpg";
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault(); // Prevent default form submission
 
@@ -170,6 +180,7 @@ const Find = () => {
                   <option value="Instruments (ex. rules)">
                     Instruments (ex. rulers)
                   </option>
+                  <option value="Other">Other</option>
                 </select>
               </div>
               <div className="form-input-container">
@@ -218,7 +229,7 @@ const Find = () => {
               <div
                 className="card-top"
                 style={{
-                  backgroundImage: `url(https://i.ebayimg.com/images/g/4zcAAOSwThli3Hw5/s-l500.jpg)`,
+                  backgroundImage: `url(${imageUrl})`,
                 }}
               />
               <div className="card-bottom">
