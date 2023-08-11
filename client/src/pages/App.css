@@ -1,0 +1,186 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* 
+.floating-donate {
+  background-color: white;
+  width: 60vw;
+  height: 75vh;
+  top: 20%;
+  left: 20%;
+  position: absolute;
+  border-radius: 2rem;
+}
+
+.floating-find {
+  background-color: white;
+  width: 60vw;
+  height: 55vh;
+  top: 20%;
+  left: 20%;
+  position: absolute;
+  border-radius: 2rem;
+}
+
+.donate-form h3 {
+  padding-top: 2vh;
+  color: black;
+  padding-right: 2vw;
+  float: right;
+}
+
+.find-form h3 {
+  padding-top: 2vh;
+  color: black;
+  padding-right: 2vw;
+  float: right;
+}
+
+.donate-form h4 {
+  padding-top: 2vh;
+  padding-left: 2vw;
+  color: var(--base);
+  float: left;
+}
+
+.find-form h4 {
+  padding-top: 2vh;
+  padding-left: 2vw;
+  color: var(--base);
+  float: left;
+}
+
+.find-forms {
+  padding-top: 10vh;
+  
+}
+
+#submit{
+  background-color: var(--base);
+  color: white;
+  height: 5vh;
+  width: 8vw;
+  border-radius: 1rem;
+  border-style: none;
+  margin-top: 32.5vh;
+}
+
+.find-forms div input {
+  width: 15vw;
+  border-radius: 0.5rem;
+  height: 4vh;
+  border-style: black;
+  border-width: 0.05rem;
+  margin-bottom: 3vh;
+}
+
+
+#resource {
+  width: 15vw;
+  border-radius: 0.5rem;
+  height: 4vh;
+  border-style: black;
+  border-width: 0.05rem;
+  margin-bottom: 3vh;
+}
+
+#state {
+  width: 15vw;
+  border-radius: 0.5rem;
+  height: 4vh;
+  border-style: black;
+  border-width: 0.05rem;
+  margin-bottom: 3vh;
+}
+
+
+.left-side {
+  float: left;
+  margin-left: 15%;
+  width: 5vw;
+}
+
+.right-side {
+  margin-left: 40%;
+  float: left;
+  width: 5vw;
+}
+
+@media only screen and (max-width: 800px){
+  .right-side{
+    margin-left: 0%;
+    text-align: center;
+    padding-left: 0%;
+  }
+  .left-side{
+    margin-left: 0%;
+  }
+
+  .donate-form {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    float: left;
+    padding-left: 20vw;
+    
+  }
+
+  .find-forms {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      float: left;
+      
+    
+  }
+
+  .find-forms input {
+    width: 60vw;
+  }
+  .donate-form h3 {
+    text-align: center;
+    padding-top: 5%;
+  }
+  .donate-form h4 {
+    text-align: center;
+    padding-top: 15%;
+  }
+
+  
+} */
