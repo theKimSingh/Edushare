@@ -2,12 +2,17 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./donate_resources.css";
 import "./find_resources.css";
-import resources from "./resources.js";
 
-const Find = () => {
+function Find() {
   const [data, setData] = useState([]);
-  const [condition, setCondition] = useState("");
   const [resource, setResource] = useState("");
+  const [age, setAge] = useState("");
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [street, setStreet] = useState("");
+  const [states, setStates] = useState("");
+  const [zip, setZip] = useState("");
+  const [city, setCity] = useState("");
 
   let imageUrl = "";
   if (resource === "Textbook") {
@@ -19,8 +24,35 @@ const Find = () => {
     imageUrl = "https://i.ebayimg.com/images/g/PSsAAOSwNSdcbtNB/s-l640.jpg";
   }
 
-  const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent default form submission
+  function formatCurrentTime() {
+    const now = new Date();
+    const formattedTime = now.toISOString().replace(/\d{3}Z$/, "0000000");
+    console.log(formattedTime);
+    return formattedTime;
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent default form submission
+
+    const formData = {
+      fullName,
+      email,
+      states,
+      city,
+      zip,
+      age,
+      street,
+      resource,
+      dateTime: formatCurrentTime(),
+    };
+
+    try {
+      const response = await axios.post("/api/submitForm", formData);
+      console.log(response.data.message);
+      // Reset form fields here if needed
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
 
     axios
       .get("http://localhost:3001/api/data", {
@@ -53,6 +85,8 @@ const Find = () => {
                   id=""
                   placeholder="John Doe"
                   required={true}
+                  value={fullName}
+                  onChange={(e) => setFullName(e.target.value)}
                 />
               </div>
               <div className="form-input-container">
@@ -63,6 +97,8 @@ const Find = () => {
                   id=""
                   placeholder="123@example.com"
                   required={true}
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div className="address-container">
@@ -74,6 +110,8 @@ const Find = () => {
                     id=""
                     placeholder="123 Airo Street"
                     required={true}
+                    value={street}
+                    onChange={(e) => setStreet(e.target.value)}
                   />
                 </div>
                 <div className="address-bottom">
@@ -85,6 +123,8 @@ const Find = () => {
                       id=""
                       placeholder="Bothell"
                       required={true}
+                      value={city}
+                      onChange={(e) => setCity(e.target.value)}
                     />
                   </div>
                   <div className="form-input-container" id="state">
@@ -94,8 +134,10 @@ const Find = () => {
                       multiple={false}
                       name="state"
                       required={true}
+                      value={states}
+                      onChange={(e) => setStates(e.target.value)}
                     >
-                      <option value=""></option>
+                      <option value={null}></option>
                       <option value="AL">Alabama</option>
                       <option value="AK">Alaska</option>
                       <option value="AZ">Arizona</option>
@@ -153,11 +195,13 @@ const Find = () => {
                     <label htmlFor="zip">ZIP</label>
                     <input
                       name="zip"
-                      id=""
+                      id="zip"
                       placeholder="90124"
                       type="number"
                       max={99999}
                       min={10000}
+                      value={zip}
+                      onChange={(e) => setZip(e.target.value)}
                     />
                   </div>
                 </div>
@@ -172,10 +216,10 @@ const Find = () => {
                   name="resource"
                   onChange={(e) => setResource(e.target.value)}
                 >
-                  <option value=""></option>
+                  <option value={null}></option>
                   <option value="Textbook">Textbook</option>
-                  <option value="Writing Tools (ex. pen, pencils)">
-                    Writing Tools (ex. pen, pencils)
+                  <option value="Writing Tools (ex. pens, pencils)">
+                    Writing Tools (ex. pens, pencils)
                   </option>
                   <option value="Instruments (ex. rules)">
                     Instruments (ex. rulers)
@@ -184,29 +228,17 @@ const Find = () => {
                 </select>
               </div>
               <div className="form-input-container">
-                <label htmlFor="grade">School Grade</label>
-                <select name="grade" id="">
-                  <option value=""></option>
-                  <option value="">Kindergarten</option>
-                  <option value="">1</option>
-                  <option value="">2</option>
-                  <option value="">3</option>
-                  <option value="">4</option>
-                  <option value="">5</option>
-                  <option value="">6</option>
-                  <option value="">7</option>
-                  <option value="">8</option>
-                  <option value="">9</option>
-                  <option value="">10</option>
-                  <option value="">11</option>
-                  <option value="">12</option>
-                  <option value="">1st Year</option>
-                  <option value="">2nd Year</option>
-                  <option value="">3rd Year</option>
-                  <option value="">4th Year</option>
-                  <option value="">Graduate</option>
-                  <option value="">Not in school</option>
-                </select>
+                <label htmlFor="age">Age</label>
+                <input
+                  name="age"
+                  id="age"
+                  placeholder=""
+                  type="number"
+                  max={116}
+                  min={0}
+                  value={age}
+                  onChange={(e) => setAge(e.target.value)}
+                />
               </div>
               <button type="submit" className="form-btn">
                 Next
@@ -247,6 +279,6 @@ const Find = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Find;

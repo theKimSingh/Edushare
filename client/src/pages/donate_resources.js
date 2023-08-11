@@ -1,17 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 import "./donate_resources.css";
+import axios from "axios";
 
 function Donate() {
-  function handleSubmit(e) {
+  const [age, setAge] = useState("");
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [street, setStreet] = useState("");
+  const [states, setStates] = useState("");
+  const [zip, setZip] = useState("");
+  const [city, setCity] = useState("");
+  const [resource, setResource] = useState("");
+  const [quantity, setQuantity] = useState("");
+  const [productName, setProductName] = useState("");
+
+  const handleSubmit = async (e) => {
     // Prevent the browser from reloading the page
     e.preventDefault();
+
+    const formData = {
+      fullName,
+      email,
+      states,
+      city,
+      zip,
+      age,
+      street,
+      resource,
+      dateTime: formatCurrentTime(),
+      quantity,
+      productName,
+    };
+
+    try {
+      const response = await axios.post("/api/submitDonate", formData);
+      console.log(response.data.message);
+      // Reset form fields here if needed
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
+
+  function formatCurrentTime() {
+    const now = new Date();
+    const formattedTime = now.toISOString().replace(/\d{3}Z$/, "0000000");
+    console.log(formattedTime);
+    return formattedTime;
   }
+
   return (
     <div className="donate-resources-bg">
       <div className="floating-donate">
         <h3>Share the gift of education.</h3>
         <h4>Donate Supplies</h4>
-        <form action="" className="donate-form">
+        <form action="" className="donate-form" onSubmit={handleSubmit}>
           <div className="left-side">
             <div className="form-input-container">
               <label htmlFor="name">Full Name</label>
@@ -21,6 +63,8 @@ function Donate() {
                 id=""
                 placeholder="John Doe"
                 required={true}
+                value={fullName}
+                onChange={(e) => setFullName(e.target.value)}
               />
             </div>
             <div className="form-input-container">
@@ -31,6 +75,8 @@ function Donate() {
                 id=""
                 placeholder="123@example.com"
                 required={true}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="address-container">
@@ -42,6 +88,8 @@ function Donate() {
                   id=""
                   placeholder="123 Airo Street"
                   required={true}
+                  value={street}
+                  onChange={(e) => setStreet(e.target.value)}
                 />
               </div>
               <div className="address-bottom">
@@ -53,6 +101,8 @@ function Donate() {
                     id=""
                     placeholder="Bothell"
                     required={true}
+                    value={city}
+                    onChange={(e) => setCity(e.target.value)}
                   />
                 </div>
                 <div className="form-input-container" id="state">
@@ -62,7 +112,10 @@ function Donate() {
                     multiple={false}
                     name="state"
                     required={true}
+                    value={states}
+                    onChange={(e) => setStates(e.target.value)}
                   >
+                    <option value={null}></option>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -120,38 +173,81 @@ function Donate() {
                   <label htmlFor="zip">ZIP</label>
                   <input
                     name="zip"
-                    id=""
+                    id="zip"
                     placeholder="90124"
                     type="number"
                     max={99999}
                     min={10000}
+                    value={zip}
+                    onChange={(e) => setZip(e.target.value)}
                   />
                 </div>
               </div>
+            </div>
+            <div className="form-input-container">
+              <label htmlFor="age">Age</label>
+              <select
+                name="age"
+                id="age"
+                value={age}
+                onChange={(e) => setAge(e.target.value)}
+              >
+                <option value={null}></option>
+                <option value="Under 13">Under 13</option>
+                <option value="14-18">14-18</option>
+                <option value="18-24">18-24</option>
+                <option value="Over 24">Over 24</option>
+              </select>
             </div>
           </div>
           <div className="right-side">
             <div className="form-input-container">
               <label for="resource">Resource</label>
-              <select id="resource" name="resource">
-                <option value="textbook">Textbook</option>
-                <option value="writing tools">
-                  Writing Tools (ex. pen, pencils)
+              <select
+                id="resource"
+                value={resource}
+                name="resource"
+                onChange={(e) => setResource(e.target.value)}
+              >
+                <option value={null}></option>
+                <option value="Textbook">Textbook</option>
+                <option value="Writing Tools (ex. pens, pencils)">
+                  Writing Tools (ex. pens, pencils)
                 </option>
-                <option value="instruments">Instruments (ex. rules)</option>
+                <option value="Instruments (ex. rules)">
+                  Instruments (ex. rulers)
+                </option>
               </select>
             </div>
             <div className="form-input-container">
               <label for="product-name">Product Name</label>
-              <input type="text" name="product-name" id="" />
+              <input
+                type="text"
+                name="product-name"
+                id=""
+                value={productName}
+                onChange={(e) => setProductName(e.target.value)}
+              />
             </div>
             <div className="form-input-container">
               <label for="quantity">Quantity</label>
-              <input type="number" name="quantity" id="" />
+              <input
+                type="number"
+                name="quantity"
+                id="quantity"
+                value={quantity}
+                onChange={(e) => setQuantity(e.target.value)}
+              />
             </div>
             <div className="form-input-container">
               <label htmlFor="image-upload">Upload Image</label>
-              <input type="file" accept="image/*" src="" alt="" name="image-upload"/>
+              <input
+                type="file"
+                accept="image/*"
+                src=""
+                alt=""
+                name="image-upload"
+              />
             </div>
             <button type="submit" className="form-btn">
               Submit
