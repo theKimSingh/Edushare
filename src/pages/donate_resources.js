@@ -16,7 +16,6 @@ function Donate() {
 
   const handleSubmit = async (e) => {
     // Prevent the browser from reloading the page
-    e.preventDefault();
 
     const formData = {
       fullName,
