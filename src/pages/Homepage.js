@@ -1,7 +1,5 @@
 import React from "react";
 import "./Homepage.css";
-import facebookLogo from "../elements/facebook_logo.png";
-import teamMembers from "./teamMembers";
 
 const Homepage = () => {
   return (
