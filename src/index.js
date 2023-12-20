@@ -15,10 +15,10 @@ root.render(
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/edushare" element={<App />} />
-        <Route path="/edushare/contact-us" element={<Contact />} />
-        <Route path="/edushare/donate-resources" element={<Donate />} />
-        <Route path="/edushare/find-resources" element={<Find />} />
+        <Route path="/" element={<App />} />
+        <Route path="/contact-us" element={<Contact />} />
+        <Route path="/donate-resources" element={<Donate />} />
+        <Route path="/find-resources" element={<Find />} />
       </Routes>
       <Footer />
     </Router>
