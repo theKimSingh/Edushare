@@ -15,6 +15,7 @@ root.render(
     <Router>
       <Navbar />
       <Routes>
+        <Redirect exact from="/" to="/" />
         <Route path="/" element={<App />} />
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/donate-resources" element={<Donate />} />
