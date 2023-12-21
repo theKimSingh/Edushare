@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/edushare/static/css/main.f245e651.css",
+    "main.js": "/edushare/static/js/main.880d107a.js",
+    "static/media/book-shelf.jpg": "/edushare/static/media/book-shelf.73668efaa5d244d7abd6.jpg",
+    "static/media/poor-children.jpg": "/edushare/static/media/poor-children.a7bcb768819abb714cfe.jpg",
+    "static/media/books.jpg": "/edushare/static/media/books.cdf8582b4d9d56fbadb3.jpg",
+    "static/media/yelp_logo.png": "/edushare/static/media/yelp_logo.14526b927a2dda6346df.png",
+    "index.html": "/edushare/index.html",
+    "main.f245e651.css.map": "/edushare/static/css/main.f245e651.css.map",
+    "main.880d107a.js.map": "/edushare/static/js/main.880d107a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f245e651.css",
+    "static/js/main.880d107a.js"
+  ]
+}
