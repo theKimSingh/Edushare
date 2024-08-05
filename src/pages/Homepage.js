@@ -33,7 +33,7 @@ const Homepage = () => {
           </p>
         </div>
         <div className="who-are-we-img-container">
-          <img alt="child doing hw" src={"child-hw.jpg"}></img>
+          <img alt="child doing hw" src={("edushare/child-hw.jpg")}></img>
         </div>
       </div>
       <div className="our-sponsors">
