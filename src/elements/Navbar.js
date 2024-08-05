@@ -16,7 +16,7 @@ const Navbar = (props) => {
     <nav className="nav">
       <div className="logo-container">
         <a href="/" className="logo-container-link">
-          <img src={require("./logo.png")} alt="" className="logo-img" />
+          <img src={require("logo.png")} alt="" className="logo-img" />
           <h2 className="logo-header">EduShare</h2>
         </a>
       </div>
