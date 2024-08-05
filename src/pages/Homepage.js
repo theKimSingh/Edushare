@@ -14,7 +14,7 @@ const Homepage = () => {
             now!
           </p>
           <button className="home-button">
-            <Link to="/edushare/donate-resources">Donate</Link>
+            <Link to="/donate-resources">Donate</Link>
           </button>
         </div>
       </div>
@@ -33,7 +33,7 @@ const Homepage = () => {
           </p>
         </div>
         <div className="who-are-we-img-container">
-          <img alt="child doing hw" src={require("../elements/child-hw.jpg")}></img>
+          <img alt="child doing hw" src={"child-hw.jpg"}></img>
         </div>
       </div>
       <div className="our-sponsors">

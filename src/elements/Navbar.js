@@ -15,20 +15,20 @@ const Navbar = (props) => {
   return (
     <nav className="nav">
       <div className="logo-container">
-        <a href="/edushare" className="logo-container-link">
+        <a href="/" className="logo-container-link">
           <img src={require("./logo.png")} alt="" className="logo-img" />
           <h2 className="logo-header">EduShare</h2>
         </a>
       </div>
       <ul className="nav-link-container" ref={navRef}>
         <li onClick={showNavbar} className="nav-item">
-          <Link to="/edushare">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li onClick={showNavbar} className="nav-item">
-          <Link to="/edushare/donate-resources">Donate Resources</Link>
+          <Link to="/donate-resources">Donate Resources</Link>
         </li>
         <li onClick={showNavbar} className="nav-item">
-          <Link to="/edushare/find-resources">Find Resources</Link>
+          <Link to="/find-resources">Find Resources</Link>
         </li>
         {/* <li className="nav-item"><a href="">Contact</a></li> */}
         <button onClick={showNavbar} className="hamburger nav-close-button">

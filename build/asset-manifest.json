@@ -1,19 +1,18 @@
 {
   "files": {
     "main.css": "/edushare/static/css/main.24d734d5.css",
-    "main.js": "/edushare/static/js/main.8934287f.js",
+    "main.js": "/edushare/static/js/main.a06c7f2b.js",
     "static/media/book-shelf.jpg": "/edushare/static/media/book-shelf.73668efaa5d244d7abd6.jpg",
-    "static/media/child-hw.jpg": "/edushare/static/media/child-hw.b2fecb022a0b73d55953.jpg",
     "static/media/poor-children.jpg": "/edushare/static/media/poor-children.a7bcb768819abb714cfe.jpg",
     "static/media/books.jpg": "/edushare/static/media/books.cdf8582b4d9d56fbadb3.jpg",
     "static/media/yelp_logo.png": "/edushare/static/media/yelp_logo.14526b927a2dda6346df.png",
     "static/media/logo.png": "/edushare/static/media/logo.99504d7d3b879beae62b.png",
     "index.html": "/edushare/index.html",
     "main.24d734d5.css.map": "/edushare/static/css/main.24d734d5.css.map",
-    "main.8934287f.js.map": "/edushare/static/js/main.8934287f.js.map"
+    "main.a06c7f2b.js.map": "/edushare/static/js/main.a06c7f2b.js.map"
   },
   "entrypoints": [
     "static/css/main.24d734d5.css",
-    "static/js/main.8934287f.js"
+    "static/js/main.a06c7f2b.js"
   ]
 }
