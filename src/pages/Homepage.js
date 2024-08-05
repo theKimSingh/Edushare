@@ -1,5 +1,7 @@
 import React from "react";
 import "./Homepage.css";
+import { Link } from "react-router-dom";
+
 
 const Homepage = () => {
   return (
@@ -12,7 +14,7 @@ const Homepage = () => {
             now!
           </p>
           <button className="home-button">
-            <a href="/donate-resources">Donate</a>
+            <Link to="/edushare/donate-resources">Donate</Link>
           </button>
         </div>
       </div>
