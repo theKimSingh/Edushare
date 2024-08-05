@@ -15,7 +15,7 @@ const Footer = () => {
       <footer>
         <div className="intro-section footer-left">
           <a href="/" className="logo-container-link">
-            <img src={"./logo.png"} alt="" className="logo-img" />
+            <img src={require("./logo.png")} alt="" className="logo-img" />
             <h2 className="logo-header footer-logo-header">EduShare</h2>
           </a>
           <p>
